@@ -1,3 +1,4 @@
-n = 10
-d = [0]*(n+1)
-print(d)
+N = int(input())
+z = []
+for i in range(1, N):
+    print(i)
