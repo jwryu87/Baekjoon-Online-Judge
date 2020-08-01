@@ -1,7 +1,5 @@
 # 제시된 것
 N, M = map(int, input().split())
-N = 10
-M = 13
 z = []
 b = []
 for i in range(N):
