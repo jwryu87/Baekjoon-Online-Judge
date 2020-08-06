@@ -9,3 +9,5 @@ for i in range(N):
     dic_list = list(dic_modify[i])
     dic_list.reverse()
     print(' '.join(dic_list))
+
+
