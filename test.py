@@ -1,12 +1,7 @@
+from itertools import permutations
+
 a, b = map(int, input().split())
 
-if a <= b:
-    if a % b == 0:
-        print("factor")
-    # else:
-    #     print("neither")
-elif a >= b:
-    if b % a == 0:
-        print("multiple")
-    # else:
-    #     print("neither")
+P = permutations(range(1, N+1), M)  # iter(tuple)
+for i in P:
+    print(' '.join(map(str, i)))  # tuple -> str
