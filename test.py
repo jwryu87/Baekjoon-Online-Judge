@@ -1,7 +1,11 @@
-from itertools import permutations
+N = int(input())
+def pf(N):
+    for i in range(2, N + 1):
+        if N % i == 0: # 값을 나누어서 딱떨어지면
+            print(i)
+            N = N // i # 나누어진 값으로 다시 시작한다.
+            if N == 1:
+                quit()
+            pf(N)
 
-a, b = map(int, input().split())
-
-P = permutations(range(1, N+1), M)  # iter(tuple)
-for i in P:
-    print(' '.join(map(str, i)))  # tuple -> str
+pf(N)
