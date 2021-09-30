@@ -23,11 +23,12 @@
 # 숫자로 변환 후
 # 시간 계산 ( 숫자 + 1 )
 
-q =list(input())
+q = list(input())
 z = ['ABC', 'DEF', 'GHI', 'JKL', 'MNO', 'PQRS', 'TUV', 'WXYZ']
 w = 0
-for l in range(len(q)):
+for l1 in range(len(q)):
     for i in range(len(z)):
-        if q[l] in list(z[i]):
+        if q[l1] in list(z[i]):
             w = w + (i + 3)
+
 print(w)
